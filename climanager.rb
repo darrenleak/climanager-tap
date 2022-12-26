@@ -5,11 +5,11 @@
 class Climanager < Formula
   desc ""
   homepage "https://github.com/darrenleak/climanager"
-  version "0.1.11"
+  version "0.1.12"
 
   on_macos do
-    url "https://github.com/darrenleak/climanager/releases/download/v0.1.11/climanager_0.1.11_darwin_all.tar.gz"
-    sha256 "f0ce2d9dc0436c0dd13d4cffa25459bde1b49fb88b0f21bfc27a05bfe3fb0843"
+    url "https://github.com/darrenleak/climanager/releases/download/v0.1.12/climanager_0.1.12_darwin_all.tar.gz"
+    sha256 "310ce68e33fc1a42ea0aa2d2da0f1efaace8c9248e37a3d07aeeefd07c5d131c"
 
     def install
       bin.install "climanager"
@@ -18,16 +18,16 @@ class Climanager < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/darrenleak/climanager/releases/download/v0.1.11/climanager_0.1.11_linux_arm64.tar.gz"
-      sha256 "79a6945650d7571ab032a1d680f18eecb2f19dd6c6bcc8885cd29ef009386919"
+      url "https://github.com/darrenleak/climanager/releases/download/v0.1.12/climanager_0.1.12_linux_arm64.tar.gz"
+      sha256 "bbd3222fbd1d30b0c9e090a3aaaf61a3759bd6d3489715ade830b36cdc84735d"
 
       def install
         bin.install "climanager"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/darrenleak/climanager/releases/download/v0.1.11/climanager_0.1.11_linux_amd64.tar.gz"
-      sha256 "98d44a8fa9f21b6e5f560a6a8d298674fff33e89478cf9f65f4ebe23a89cb0d1"
+      url "https://github.com/darrenleak/climanager/releases/download/v0.1.12/climanager_0.1.12_linux_amd64.tar.gz"
+      sha256 "9fa5967bfba5605a83c80a3a48ebf693a3c5fdf72a97788ed2670077bae532e7"
 
       def install
         bin.install "climanager"
